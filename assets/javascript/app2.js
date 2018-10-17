@@ -38,7 +38,7 @@
         stop();
 
         //  Alert the user that time is up.
-        alert("Time Up!");
+        alert("Trivia Game is Finished!");
       }
     }
 
@@ -53,3 +53,73 @@
 
     //  Execute the run function.
     run();
+
+
+    // Question & Answers 
+function check(){
+
+    // Will search whole document and look for something called quiz, question number name  value for it 
+    var q1 = document.quiz.q1.value;
+    var q2 = document.quiz.q2.value;
+    var q3 = document.quiz.q3.value;
+    var q4 = document.quiz.q4.value;
+    var q5 = document.quiz.q5.value;
+    var correct = 0;
+
+        if (q1 == "Trenton") {
+            correct = correct + 1;
+        }
+        if (q2 == "Harrisburg") {
+            correct = correct + 1;
+        }  
+        if (q3 == "Instagram") {
+            correct = correct + 1;
+        }
+        if (q4 == "Kylie") {
+            correct = correct + 1;
+        }   
+        if (q5 == "Venus") {
+            correct = correct + 1;
+        }       
+
+    document.getElementById("after_submit").style.visibility = "visible";    
+
+    //Will Search ID to put what is inside tag You Got _ Answers Correct
+    document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";    
+}
+
+
+
+
+
+numberRight = 0;
+numberWrong = 0;
+numberUnanswered = 0;
+var userAnswers = [];
+
+
+var questions = [ {
+	question: "The capital of New Jersey is",
+	choices: ["Jersey City", "Newark", "Camden", "Trenton"],
+	correctAnswer: "Trenton"
+}, {
+	question: "The capital of Pennysylvania is",
+	choices: ["Philadelphia", "Harrisburg", "Pittsburg", "Allentown"],
+	correctAnswer: "Harrisburg"
+}, {
+	question: "What is the platform more frequently used by the youth?",
+	choices: ["Myspace", "Twitter", "Instagram", "Facebook"],
+	correctAnswer: "Instagram"
+}, {
+	question: "Who was the sister known now for being a ''self made'' billionaire?",
+	choices: ["Kendall", "Kim", "Khloe", "Kylie"],
+	correctAnswer: "Kylie"
+}, {
+	question: "Which of these 4 planets have no satellites?",
+	choices: ["Venus", "Earth", "Mars", "Jupiter"],
+	correctAnswer: "Venus"
+}
+];
+// console.log (questions[1].question);
+
+// Defined variables 
