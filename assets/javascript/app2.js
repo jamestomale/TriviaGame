@@ -82,44 +82,9 @@ function check(){
             correct = correct + 1;
         }       
 
+    // Looks for id after_submit and changes style css #after_submit from hidden to visible   
     document.getElementById("after_submit").style.visibility = "visible";    
 
     //Will Search ID to put what is inside tag You Got _ Answers Correct
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";    
 }
-
-
-
-
-
-numberRight = 0;
-numberWrong = 0;
-numberUnanswered = 0;
-var userAnswers = [];
-
-
-var questions = [ {
-	question: "The capital of New Jersey is",
-	choices: ["Jersey City", "Newark", "Camden", "Trenton"],
-	correctAnswer: "Trenton"
-}, {
-	question: "The capital of Pennysylvania is",
-	choices: ["Philadelphia", "Harrisburg", "Pittsburg", "Allentown"],
-	correctAnswer: "Harrisburg"
-}, {
-	question: "What is the platform more frequently used by the youth?",
-	choices: ["Myspace", "Twitter", "Instagram", "Facebook"],
-	correctAnswer: "Instagram"
-}, {
-	question: "Who was the sister known now for being a ''self made'' billionaire?",
-	choices: ["Kendall", "Kim", "Khloe", "Kylie"],
-	correctAnswer: "Kylie"
-}, {
-	question: "Which of these 4 planets have no satellites?",
-	choices: ["Venus", "Earth", "Mars", "Jupiter"],
-	correctAnswer: "Venus"
-}
-];
-// console.log (questions[1].question);
-
-// Defined variables 

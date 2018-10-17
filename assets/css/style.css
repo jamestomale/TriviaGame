@@ -1,6 +1,17 @@
+#quiz {
+    float: left;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 15px;
+}
+
+#rightbox {
+    bottom: 0;
+    height: 1000px;
+}
+
 div {
     font-family: 'Libre Barcode 128 Text', cursive;
-    text-align: center;
+    text-align: left;
     font-size: 100px;
     background-color:#FFFF00;
 }
@@ -9,18 +20,13 @@ div {
     font-family: 'Notable', sans-serif;
     font-size: 75px;
     text-align: center;
-    background-color:#FFFF00;
     width: 400px;
-    margin-left: 20px;
-    font-size: 40px;
-    border-radius: 20px;
 }
 
 p {
     font-family: 'Encode Sans Condensed', sans-serif;
     font-size: 25px;
     text-align: center;
-    background-color:#FFFF00;
 }
 
 #after_submit {
@@ -28,3 +34,17 @@ p {
     text-align: center;
 
 }
+
+.footer {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    border-top: 25px;
+    border-top-color: #4aaaa5;
+    font-size: 25px;
+ }
